@@ -1,4 +1,11 @@
-spring.datasource.url: jdbc:h2:file:./camunda-h2-database
+spring:
+  h2:
+    console:
+      enabled: true
+  datasource:
+    url: jdbc:mysql://localhost:3306/my_camunda_project?useSSL=false&characterEncoding=utf8&allowPublicKeyRetrieval=true&zeroDateTimeBehavior=CONVERT_TO_NULL&nullCatalogMeansCurrent=true
+    username: root
+    password: root
 
 camunda.bpm.admin-user:
   id: demo
