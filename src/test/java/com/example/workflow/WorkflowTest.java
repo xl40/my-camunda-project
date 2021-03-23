@@ -21,7 +21,7 @@ public class WorkflowTest extends AbstractProcessEngineRuleTest {
   @Test
   public void shouldExecuteHappyPath() {
     // given
-    String processDefinitionKey = "my-camunda-project-process";
+    String processDefinitionKey = "my-project-process";
 
     // when
     ProcessInstance processInstance = runtimeService.startProcessInstanceByKey(processDefinitionKey);
